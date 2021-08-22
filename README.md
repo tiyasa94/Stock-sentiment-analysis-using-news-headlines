@@ -29,15 +29,10 @@ The Code is written in Python 3.9. If you are using a lower version of Python yo
 6. [NUMPY](#numpy)
 #### PANDAS
 PANDAS is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language and made available through the pandas module.
-#### RE
-Regular expressions (called REs) are essentially a tiny, highly specialized programming language embedded inside Python and made available through the re module.
-#### NLTK
-NLTK is a leading platform for building Python programs to work with human language data and made available through the nltk module. It provides easy-to-use interfaces to over 50 corpora and lexical resources such as WordNet, along with a suite of text processing libraries for classification, tokenization, stemming, tagging, parsing, and semantic reasoning, wrappers, stopwords for industrial-strength NLP libraries, and an active discussion forum.
 #### SCIKIT-LEARN
-SCIKIT-LEARN is made available through the sklearn module which is a simple and efficient tool for predictive data analysis built on NumPy, SciPy, and matplotlib. I have used CountVectorizer, different metrics for testing accuracy and various ML models.
+SCIKIT-LEARN is made available through the sklearn module which is a simple and efficient tool for predictive data analysis built on NumPy, SciPy, and matplotlib. I have used CountVectorizer, different metrics for testing accuracy and various ML models. Here we have used logistic regression, random forest classifier and support vector machine classifier.
 #### KERAS
 From Tensorflow we imported Keras which is one of the most used deep learning frameworks as it makes it easier to run new experiments. Keras API is designed for human beings, which follows best practices for reducing cognitive load as it offers consistent & simple APIs, it minimizes the number of user actions required for common use cases, and it provides clear & actionable error messages. It also has extensive documentation and developer guides.
-#### NUMPY
-Numpy is the fundamental package for scientific computing with Python which offers powerful multi-dimensional arrays and various numerical computing tools for free.
+
 ### Credits
 The dataset has been collected from Kaggle's stock_sentiment_analysis.  
