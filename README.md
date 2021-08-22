@@ -22,11 +22,9 @@ This project is divided into three parts:
 ### Technologies Used
 The Code is written in Python 3.9. If you are using a lower version of Python you can upgrade using the pip package, ensuring you have the latest version of pip. I have used Google Colaboratory, or "Colab" for short which allows us to write and execute Python in browser. I have used various open-source Python packages in the solution, for example:
 1. [PANDAS](#pandas)
-2. [RE](#re)
-3. [NLTK](#re)
 4. [SCIKIT-LEARN](#scikit-learn)
 5. [KERAS](#keras)
-6. [NUMPY](#numpy)
+
 #### PANDAS
 PANDAS is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language and made available through the pandas module.
 #### SCIKIT-LEARN
