@@ -10,10 +10,12 @@ from sklearn.metrics import accuracy_score
 
 
 #dataset loading and analyzing
-data = pd.read_csv('stock_analysis.csv')
-data.head()
-data.shape
-data['Label'].value_counts()
+data = pd.read_csv('stock_predict.csv')
+print("Data :\n")
+print("================================================>\n")
+print(data.head(5))
+print("\nShape of data :\n",data.shape)
+print("\nCount of label values :\n",data['Label'].value_counts())
 
 #splitting dataset
 dat1 = data[data['Date']<'20150701']
@@ -62,10 +64,12 @@ X_test = cv.transform(test_transform)
 y_pred_rfc = rfc.predict(X_test)
 
 #test accuracy
-rfc.score(X_test,y_pred_rfc)
-confusion_matrix(dat2['Label'],y_pred_rfc)
-f1_score(dat2['Label'],y_pred_rfc)
-accuracy_score(dat2['Label'],y_pred_rfc)
+print("\nTest performance of random forest classifier model\n")
+print("================================================>")
+print("\nScore :\n",rfc.score(X_test,y_pred_rfc))
+print("\nConfusion matrix :\n",confusion_matrix(dat2['Label'],y_pred_rfc))
+print("\nF1 score :\n",f1_score(dat2['Label'],y_pred_rfc))
+print("\nAccuracy score :\n",accuracy_score(dat2['Label'],y_pred_rfc))
 
 
 #training with logistic regression
@@ -77,10 +81,12 @@ lreg.score(X_train,y_train)
 y_pred_lreg = lreg.predict(X_test)
 
 #test accuracy
-lreg.score(X_test,y_pred)
-confusion_matrix(dat2['Label'],y_pred_lreg)
-f1_score(dat2['Label'],y_pred_lreg)
-accuracy_score(dat2['Label'],y_pred_lreg)
+print("\nTest performance of logistic regression model\n")
+print("================================================>")
+print("\nScore :\n",lreg.score(X_test,y_pred_lreg))
+print("\nConfusion matrix :\n",confusion_matrix(dat2['Label'],y_pred_lreg))
+print("\nF1 score :\n",f1_score(dat2['Label'],y_pred_lreg)) 
+print("\nAccuracy score :\n", accuracy_score(dat2['Label'],y_pred_lreg))
 
 #training with svm classifier
 svm = svm.SVC()
@@ -91,7 +97,9 @@ svm.score(X_train,y_train)
 y_pred_svm = svm.predict(X_test)
 
 #test accuracy
-svm.score(X_test,y_pred)
-confusion_matrix(dat2['Label'],y_pred_svm)
-f1_score(dat2['Label'],y_pred_svm)
-accuracy_score(dat2['Label'],y_pred_svm)
+print("\nTest performance of support vector machine model\n")
+print("================================================>")
+print("\nScore :\n",svm.score(X_test,y_pred_svm))
+print("\nConfusion matrix :\n",confusion_matrix(dat2['Label'],y_pred_svm))
+print("\nF1 score :\n",f1_score(dat2['Label'],y_pred_svm))
+print("\nAccuracy score :\n",accuracy_score(dat2['Label'],y_pred_svm))
